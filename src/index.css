@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f8fafc 0%, #e3e7ee 100%);
+  min-height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  background: rgba(255, 255, 255, 0.85);
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(120, 144, 156, 0.10);
+  padding: 32px 24px;
+}
+
+h1 {
+  color: #6c7a89;
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+form input[type="text"] {
+  width: 70%;
+  padding: 8px 12px;
+  border: 1px solid #dbe2ea;
+  border-radius: 8px;
+  background: #f4f7fa;
+  color: #5a6a7a;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+form input[type="text"]:focus {
+  border-color: #b3c2d2;
+}
+
+form button {
+  margin-left: 12px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #e3e7ee 0%, #cfd8e3 100%);
+  color: #6c7a89;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(120, 144, 156, 0.07);
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background: linear-gradient(90deg, #dbe2ea 0%, #b3c2d2 100%);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background: linear-gradient(90deg, #f4f7fa 0%, #e3e7ee 100%);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(120, 144, 156, 0.05);
+}
+
+li span {
+  color: #5a6a7a;
+  font-size: 16px;
+  flex: 1;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+li span.completed {
+  color: #b3c2d2;
+  text-decoration: line-through;
+}
+
+li button {
+  background: #e3e7ee;
+  color: #6c7a89;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+li button:hover {
+  background: #cfd8e3;
 }
